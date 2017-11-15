@@ -1,0 +1,127 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "answerSlot",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "Nymeria",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Harrenhal",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Warg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Ice",
+              "synonyms": []
+            }
+          }
+        ]
+      },
+      {
+        "name": "decisionSlot",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "Yes",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "No",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Naah",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Yeah",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Yup",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Nope",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "customIntent",
+        "samples": [
+          "Valar Dohareis",
+          "hello",
+          "hola"
+        ],
+        "slots": []
+      },
+      {
+        "name": "quizIntent",
+        "samples": [
+          "{decision}",
+          "The answer is {answer}"
+        ],
+        "slots": [
+          {
+            "name": "decision",
+            "type": "decisionSlot"
+          },
+          {
+            "name": "answer",
+            "type": "answerSlot"
+          }
+        ]
+      }
+    ],
+    "invocationName": "quiz game"
+  }
+}
