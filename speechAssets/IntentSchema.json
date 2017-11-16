@@ -31,6 +31,83 @@
               "value": "Ice",
               "synonyms": []
             }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "cersei",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "joffrey",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "ladder",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "walda",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "flower",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "longclaw",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "astapor",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "olly",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "mockingbird",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "cobbler",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "tyrion",
+              "synonyms": []
+            }
           }
         ]
       },
@@ -96,11 +173,29 @@
         "samples": []
       },
       {
+        "name": "answerIntent",
+        "samples": [
+          "The answer is {answer}",
+          "{answer}"
+        ],
+        "slots": [
+          {
+            "name": "answer",
+            "type": "answerSlot"
+          }
+        ]
+      },
+      {
         "name": "customIntent",
         "samples": [
           "Valar Dohareis",
           "hello",
-          "hola"
+          "hola",
+          "vlar dohris",
+          "volar dohris",
+          "volar doharis",
+          "vala doharis",
+          "valar dohaeris"
         ],
         "slots": []
       },
@@ -108,20 +203,29 @@
         "name": "quizIntent",
         "samples": [
           "{decision}",
-          "The answer is {answer}"
+          "Ready",
+          "I'm Ready",
+          "Yeah Ready"
         ],
         "slots": [
           {
             "name": "decision",
             "type": "decisionSlot"
-          },
-          {
-            "name": "answer",
-            "type": "answerSlot"
           }
         ]
+      },
+      {
+        "name": "UnhandledIntent",
+        "samples": [
+          "basd fasd",
+          "hdfasdf sdfas ewqrqwe",
+          "asdads asdnjafsasd",
+          "asdasdadsad",
+          "asdadsjnwwqi"
+        ],
+        "slots": []
       }
     ],
-    "invocationName": "quiz game"
+    "invocationName": "game of quiz"
   }
 }
