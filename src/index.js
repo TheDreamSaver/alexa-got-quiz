@@ -75,7 +75,7 @@ var handlers = {
    "quizIntent": function () {
        var mydecision = this.event.request.intent.slots.decision.value;
        if(mydecision=='no'||mydecision=='nope'||mydecision=='naah'){
-        this.response.speak("Even little Lyanna Mormont has more courage than you.");
+        this.response.speak("Battles have been won against harder odds! Even little Lyanna Mormont has more courage than you.");
         this.emit(":responseReady");
        }
        
@@ -110,12 +110,25 @@ var handlers = {
 	        this.emit(':responseReady');
     },
     'UnhandledIntent': function () {
-        this.emit(':ask', 'I don\'t get it!', 'I don\'t get it!');
+        this.emit(':ask', 'I don\'t get it! Try saying Alexa, Open game of quiz!', 'I don\'t get it!');
     },
    "LaunchRequest": function () {
-    this.response.speak("Valar Morghulis").listen("You are supposed to say Valar Dohareis"); 
+    i=0;
+    this.response.speak("Valar Morghulis. You just entered the toughest of all the quizzes in Planetos.").listen("You are supposed to say Valar Dohareis"); 
     this.emit(":responseReady");
-   }
+   },
+    'AMAZON.HelpIntent': function () {
+        this.response.speak('The night is dark and full of terrors, but you will get through it. Welcome to Valar Quizolis, where you have to answer some of the hardest Planetos Trivia in order to come out the successful victor. Say ready, when you are.').listen('Battles have been won against harder odds!');
+        this.emit(':responseReady');
+    },
+    'AMAZON.CancelIntent': function () {
+        this.response.speak('Winter is coming. Goodbye!');
+        this.emit(':responseReady');
+    },
+    'AMAZON.StopIntent': function () {
+        this.response.speak('Winter is coming. Goodbye!');
+        this.emit(':responseReady');
+    },
 
 };
 
