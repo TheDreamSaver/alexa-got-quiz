@@ -176,7 +176,8 @@
         "name": "answerIntent",
         "samples": [
           "The answer is {answer}",
-          "{answer}"
+          "{answer}",
+          "{answer} is answer"
         ],
         "slots": [
           {
@@ -221,7 +222,9 @@
           "hdfasdf sdfas ewqrqwe",
           "asdads asdnjafsasd",
           "asdasdadsad",
-          "asdadsjnwwqi"
+          "asdadsjnwwqi",
+          "open quiz of game",
+          "quiz of game"
         ],
         "slots": []
       }
